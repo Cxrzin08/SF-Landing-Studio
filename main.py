@@ -1,1 +1,0 @@
-#faz o basico do flask samuel, pega do outro arquivo
