@@ -1,14 +1,13 @@
-/* static/styles.css */
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #202020;
+    background-color: #021b33;
 }
 
 header {
-    background-color:hsl(183, 100%, 85%);
+    background-color: #a9cfe5;
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -25,7 +24,7 @@ h2{
 }
 
 nav {
-    background-color: hsl(183, 100%, 85%);
+    background-color: #a9cfe5;
     padding: 0.5em 0;
 }
 
@@ -56,10 +55,10 @@ main {
 }
 
 #landing-pages {
-    background-color:hsl(183, 100%, 85%);
+    background-color: #a9cfe5;
     padding: 2em;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px ;
 }
 
 .landing-pages-container {
