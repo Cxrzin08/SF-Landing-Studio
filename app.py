@@ -10,5 +10,13 @@ def index():
 def sobre():
     return render_template("sobre.html")
 
+@app.route('/contato')
+def contato():
+    return render_template("contato.html")
+
+@app.route('/visitar')
+def visitar():
+    return render_template("visitar.html")
+
 if __name__ == '__main__':
     app.run(debug=True)
