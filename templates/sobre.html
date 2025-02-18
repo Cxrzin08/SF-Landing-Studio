@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teste</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Landing Page personalizada para gerar leads e conversões.">
+  <title>Landing Page - Converta Mais</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='sobre.css') }}">
 </head>
 <body>
-    <h1>teste</h1>
+  <header class="header">
+    <div class="container">
+      <h1>Transforme Seus Visitantes em Clientes</h1>
+      <p>Com nossa solução em landing pages personalizadas, você maximiza as conversões da sua campanha de marketing.</p>
+      <a href="#formulario" class="btn-primary">Crie sua Landing Page Agora</a>
+    </div>
+  </header>
+
+  <section class="benefits">
+    <div class="container">
+      <h2>Por que Escolher Nossas Landing Pages?</h2>
+      <ul>
+        <li><strong>Alta Taxa de Conversão:</strong> Focamos em otimizar cada detalhe para aumentar suas conversões.</li>
+        <li><strong>Design Responsivo:</strong> Nossas páginas se adaptam perfeitamente a qualquer dispositivo.</li>
+        <li><strong>Fácil Integração:</strong> Integração simples com ferramentas de marketing e CRM.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="formulario" class="form-section">
+    <div class="container">
+      <h2>Pronto para Aumentar Suas Vendas?</h2>
+      <p>Preencha o formulário abaixo e nossa equipe entrará em contato com você para personalizar sua landing page.</p>
+      <form action="#" method="post">
+        <input type="text" name="nome" placeholder="Seu Nome" required>
+        <input type="email" name="email" placeholder="Seu E-mail" required>
+        <input name="mensagem" placeholder="Sua Mensagem" required></input>
+        <button type="submit" class="btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Sua Empresa. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>
