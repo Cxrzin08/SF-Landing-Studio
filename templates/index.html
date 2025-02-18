@@ -3,31 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divulgação de Landing Pages</title>
+    <title>Criação de Landing Pages</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Inconsolata">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <header>
-        <h1>Bem Vindo A SF Landing Pages</h1>
-        <nav>
+    <div class="smooth">
+        <header>
+            <h4>SF Landing Pages</h4>
             <ul>
-                <li><a href="/sobre">Sobre</a></li>
-                <li><a href="/contato">Contato</a></li>
+                <li><a href="#two">Sobre</a></li>
+                <li><a href="#three">Serviços</a></li>
+                <li><a href="#four">Avaliações</a></li>
+                <li><a href="#bottom">Contato</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="landing-pages">
-            <h2>Landing Pages</h2>
-            <p>Você Deseja Ter Sua Marca Reconhecida?</p>
-            <div class="landing-pages-container">
-                <div class="landing-page">
-                    <h3>Landing Page 1</h3>
-                    <p>Descrição da Landing Page 1.</p>
-                    <a href="/visitar" class="visit-button" target="_blank" rel="noopener noreferrer">Visitar</a>
+        </header>
+        <section id="one">
+            <div class="content parallax">
+                <div>
+                    <h1>Bem Vindo à SF Landing Pages</h1>
+                    <svg class="title">
+                        <text x="0" y="40">SF Landing Pages</text>
+                        <path d="M 0 66 50 61"></path>
+                    </svg>
+                    <p class="lead">
+                        Se você clicar nos links de navegação, a rolagem suave não funcionará, talvez as funções não sejam suportadas pelo seu navegador. Você pode verificar o suporte no site
+                        <a class="leadlink" href="https://caniuse.com/#search=scroll-behavior" target="_blank">Can I use</a>.
+                    </p>
+                    <p class="lead">
+                        Adicionamos um efeito de paralaxe e animação de logotipo, um exemplo que você
+                        <a class="leadlink" href="https://codepen.io/andrejsharapov/pen/PVJrLO" target="blank">pode encontrar aqui.</a>
+                    </p>
                 </div>
             </div>
         </section>
-    </main>
+        <section id="two">
+            <h2>Sobre<span> nós</span></h2>
+            <p>Somos especialistas na criação de landing pages personalizadas para aumentar a conversão e engajamento do seu público.</p>
+            <div class="blocks">
+                <div class="block">
+                    <p>Design Responsivo</p>
+                </div>
+                <div class="block">
+                    <p>SEO Otimizado</p>
+                </div>
+                <div class="block">
+                    <p>Integração com Redes Sociais</p>
+                </div>
+                <div class="block">
+                    <p>Suporte 24/7</p>
+                </div>
+            </div>
+            <p>Nosso objetivo é fornecer soluções eficazes e inovadoras para ajudar seu negócio a crescer online.</p>
+        </section>
+        <section id="three">
+            <div class="grid g_two">
+                <div>
+                    <h2>Serviços<span> oferecidos</span></h2>
+                    <p>Oferecemos uma variedade de serviços para atender às suas necessidades de marketing digital, incluindo design de landing pages, otimização de SEO, e muito mais.</p>
+                </div>
+                <div class="flex column">
+                    <div class="flex column">
+                        <div class="flex jcsb">
+                            <h4>Design Personalizado</h4><span>90%</span>
+                        </div>
+                        <progress value="90" max="100"></progress>
+                    </div>
+                    <div class="flex column">
+                        <div class="flex jcsb">
+                            <h4>SEO</h4><span>85%</span>
+                        </div>
+                        <progress value="85" max="100"></progress>
+                    </div>
+                    <div class="flex column">
+                        <div class="flex jcsb">
+                            <h4>Marketing Digital</h4><span>80%</span>
+                        </div>
+                        <progress value="80" max="100"></progress>
+                    </div>
+                    <div class="flex column">
+                        <div class="flex jcsb">
+                            <h4>Suporte</h4><span>95%</span>
+                        </div>
+                        <progress value="95" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="four">
+            <h2>Avaliações<span> dos clientes</span></h2>
+            <p>Veja o que nossos clientes têm a dizer sobre nossos serviços.</p>
+            <div class="blocks">
+                <div class="block">
+                    <h4>Cliente 1</h4>
+                    <p>Excelente serviço! Minha landing page ficou incrível e aumentou muito minhas conversões.</p>
+                </div>
+                <div class="block">
+                    <h4>Cliente 2</h4>
+                    <p>Profissionais dedicados e atenciosos. Recomendo a todos que precisam de uma landing page de qualidade.</p>
+                </div>
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </section>
+        <footer id="bottom">
+            <div class="widgets">
+                <h3>SF Landing Pages</h3>
+                <div class="widget">
+                    <h5 class="follow">Siga-nos</h5>
+                    <ul>
+                        <li><a href="https://www.instagram.com/sam_augusto._?igsh=MXV1anZxbnU0bW9ndg==" target="blank">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h5>Contato</h5>
+                    <ul>
+                        <li>WhatsApp: 5519998372339</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                <p>
+                    © 2023 com <span>♥</span> <a href="#" target="_blank">SF Landing Pages</a></p><a href="#one">Scroll top ↑</a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
