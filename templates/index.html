@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criação de Landing Pages</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Inconsolata">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <div class="smooth">
@@ -141,7 +141,37 @@
                 <div class="widget">
                     <h5>Contato</h5>
                     <ul>
-                        <li>WhatsApp: 5519998372339</li>
+                        <a href="https://wa.me/+5519982334035" class="whatsapp-button" target="_blank">
+                            <img src="/static/images/whatsapp.png" alt="WhatsApp">
+                        </a>
+                        <style>
+                            .whatsapp-button {
+                                position: fixed;
+                                bottom: 80px;
+                                right: 20px;
+                                width: 60px;
+                                height: 60px;
+                                z-index: 1000;
+                            }
+                        
+                            .whatsapp-button img {
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 50%;
+                                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+                                transition: transform 0.3s ease;
+                            }
+                        
+                            .whatsapp-button img:hover {
+                                transform: scale(1.1);
+                            }
+                        
+                            .cookie-banner {
+                                z-index: 1001;
+                            }
+                        </style>
+                        
+                        <li><a href="wa.me/+5519983723389" target="blank">Instagram</a></li>
                     </ul>
                 </div>
             </div>
