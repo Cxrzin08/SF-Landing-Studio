@@ -489,3 +489,98 @@ footer .copy span {
     fill: #fff;
   }
 }
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 2px;
+    font-size: 50%;
+  }
+
+  header, footer {
+    padding: 1em 2em;
+    font-size: 0.875rem;
+  }
+
+  header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  header ul li {
+    flex: 1 1 50%;
+    text-align: center;
+    margin: 0.5em 0;
+  }
+
+  header h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .grid.g_two {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 1em 2em;
+  }
+
+  section#one .title {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  section#one .title text {
+    font-size: 1rem;
+  }
+
+  section#one .title path {
+    stroke-width: 2;
+  }
+
+  section#one .content {
+    text-align: center;
+  }
+
+  section#one .content h1 {
+    font-size: 2rem;
+  }
+
+  section#two .blocks .block,
+  section#four .blocks .block {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  section#four .dots {
+    width: 50%;
+  }
+
+  .content .blur {
+    height: 250px;
+  }
+
+  form {
+    padding: 0.5em;
+  }
+
+  form input {
+    min-height: 2.5em;
+  }
+
+  form .button {
+    padding: 0.75em 2em;
+  }
+
+  footer .widgets,
+  footer .copy {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer .copy {
+    margin-top: 0.5em;
+  }
+}
