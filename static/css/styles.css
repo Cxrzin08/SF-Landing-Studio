@@ -17,7 +17,7 @@ body {
   overflow: hidden;
   line-height: 1.5;
   font-family: 'Inconsolata', sans-serif;
-  font-size: 62.5%;
+  font-size: 80%;
   color: #fff;
   background-color: #1d1e22;
 }
@@ -188,7 +188,7 @@ section#one .title {
   min-width: 350px;
   max-height: 80px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
+  font-size: 2rem; /* Aumenta o tamanho do título */
   font-weight: 600;
 }
 section#one .title text {
@@ -197,11 +197,14 @@ section#one .title text {
   stroke: #fff;
   stroke-width: 2;
   stroke-linecap: round;
+  font-size: 4rem; /* Aumenta o tamanho do texto dentro do título */
 }
 section#one .title path {
   stroke: #fff;
   stroke-width: 4;
   animation-delay: 1s;
+  transform: translateX(40px); /* Ajusta a posição vertical do caminho */
+  transform: translateY(10px); /* Ajusta a posição vertical do caminho */
 }
 section#one::after {
   position: absolute;
@@ -278,7 +281,7 @@ section h2 span {
   align-items: center;
 }
 .content p.lead {
-  font-size: 1.25rem;
+  font-size: 1.5rem; /* Aumenta o tamanho do parágrafo com a classe lead */
 }
 .content .blur {
   position: relative;
@@ -363,6 +366,7 @@ footer {
 footer h3 {
   position: relative;
   font-family: 'Montserrat', sans-serif;
+  font-size: 2rem; /* Aumenta o tamanho do h3 no rodapé */
 }
 footer h3::before {
   position: absolute;
@@ -379,6 +383,7 @@ footer h3::before {
 footer h5 {
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem; /* Aumenta o tamanho do h5 no rodapé */
 }
 footer h5.follow {
   color: #df2359;
