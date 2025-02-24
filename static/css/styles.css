@@ -33,7 +33,7 @@ body {
   background-color: #312d3c;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #df2359;
+  background-color: #DC3545 ;
 }
 a {
   text-decoration: none;
@@ -41,7 +41,7 @@ a {
 }
 a:hover,
 a.leadlink {
-  color: #df2359;
+  color: #DC3545 ;
 }
 h1,
 h2,
@@ -71,14 +71,18 @@ header {
   top: 0;
   z-index: 2;
   height: 10vh;
-  background-color: #1d1e22;
+  width: 100%;
+  background-color: #202020;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 header h4 {
   position: relative;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  color: #df2359;
+  font-size: 1.5rem;
+  color: #DC3545 ;
 }
 header ul {
   list-style-type: none;
@@ -113,7 +117,7 @@ header ul li::before {
 }
 header ul li:hover::before {
   width: 100%;
-  background-color: #df2359;
+  background-color: #DC3545 ;
 }
 .grid {
   display: grid;
@@ -153,7 +157,7 @@ progress::-webkit-progress-value {
   position: absolute;
   top: -2px;
   left: 0;
-  background-color: #df2359;
+  background-color: #DC3545 ;
   border-radius: 1em;
   height: 5px;
 }
@@ -184,28 +188,73 @@ section#one h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 0;
 }
+
 section#one .title {
-  min-width: 350px;
-  max-height: 80px;
+  width: 100%;
+  max-width: 900px; /* Ajusta para manter proporção */
+  height: auto;
+  display: block;
+  margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
-  font-size: 2rem; /* Aumenta o tamanho do título */
-  font-weight: 600;
 }
+
 section#one .title text {
   letter-spacing: 2px;
   fill: none;
   stroke: #fff;
-  stroke-width: 2;
+  stroke-width: 3;
   stroke-linecap: round;
-  font-size: 4rem; /* Aumenta o tamanho do texto dentro do título */
+  font-size: 4rem; /* Aumenta o tamanho do texto */
+  text-anchor: middle; /* Centraliza o texto */
+  dominant-baseline: middle;
 }
-section#one .title path {
+
+@media (max-width: 768px) { /* Ajuste para celular */
+  section#one .title text {
+    font-size: 10vw; /* Ajusta conforme a tela */
+  }
+}
+
+
+
+
+
+
+
+
+.lead {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.leadlink {
+  display: inline-block;
+  font-weight: bold;
+  color: #DC3545;
+  text-decoration: none; 
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out; 
+}
+
+.leadlink:hover {
+  background-color: #DC3545; 
+  color: #fff;
+  text-decoration: none;
+}
+
+
+\section#one .title path {
   stroke: #fff;
   stroke-width: 4;
   animation-delay: 1s;
-  transform: translateX(40px); /* Ajusta a posição vertical do caminho */
-  transform: translateY(10px); /* Ajusta a posição vertical do caminho */
+  padding-left: 20px;
+  transform: translate(30px, 12px); /* Movimenta para a direita (X) e para baixo (Y) */
 }
+
 section#one::after {
   position: absolute;
   content: '';
@@ -215,6 +264,23 @@ section#one::after {
   left: 0;
   background-image: linear-gradient(0deg, rgba(29,30,34,0.3), #1d1e22);
 }
+
+.blocks {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+}
+
+.block {
+  text-align: center;
+}
+
+.block img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; 
+}
+
 section#two .blocks,
 section#four .blocks {
   padding: 2em 0;
@@ -249,30 +315,12 @@ section#four .blocks .block {
   flex-flow: column wrap;
   background-color: #191a1d;
 }
-section#four .dots {
-  margin-top: 2em;
-  display: flex;
-  width: 25%;
-  align-items: center;
-  justify-content: space-around;
-}
-section#four .dot {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  border: 2px solid #312d3c;
-  border-radius: 50%;
-  background-color: #191a1d;
-}
-section#four .dot:hover {
-  transform: scale(1.1);
-  background-color: #312d3c;
-}
+
 section h2 {
   font-family: 'Montserrat', sans-serif;
 }
 section h2 span {
-  color: #df2359;
+  color: #DC3545 ;
 }
 .content {
   position: relative;
@@ -353,7 +401,7 @@ form .button {
   color: #fff;
   border: 0;
   border-radius: 0.35em;
-  background-color: #df2359;
+  background-color: #DC3545 ;
 }
 footer {
   padding-bottom: 1em;
@@ -375,7 +423,7 @@ footer h3::before {
   left: 0;
   width: 20px;
   height: 2px;
-  background-color: #df2359;
+  background-color: #DC3545 ;
   transform-origin: 0 100%;
   transform: rotate(-5deg);
   transition: all 0.2s ease-out;
@@ -386,7 +434,7 @@ footer h5 {
   font-size: 1.5rem; /* Aumenta o tamanho do h5 no rodapé */
 }
 footer h5.follow {
-  color: #df2359;
+  color: #DC3545 ;
 }
 footer ul {
   list-style-type: none;
@@ -424,7 +472,7 @@ footer .copy p {
 footer .copy span {
   position: relative;
   display: inline-block;
-  color: #df2359;
+  color: #DC3545 ;
   animation: hearts 0.6s cubic-bezier(0.18, 0.89, 0.29, 1.05) infinite;
 }
 @media (max-width: 991px) {
@@ -499,6 +547,101 @@ footer .copy span {
   body {
     padding: 0 2px;
     font-size: 50%;
+  }
+
+  header, footer {
+    padding: 1em 2em;
+    font-size: 0.875rem;
+  }
+
+  header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  header ul li {
+    flex: 1 1 50%;
+    text-align: center;
+    margin: 0.5em 0;
+  }
+
+  header h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .grid.g_two {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 1em 2em;
+  }
+
+  section#one .title {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  section#one .title text {
+    font-size: 1rem;
+  }
+
+  section#one .title path {
+    stroke-width: 2;
+  }
+
+  section#one .content {
+    text-align: center;
+  }
+
+  section#one .content h1 {
+    font-size: 2rem;
+  }
+
+  section#two .blocks .block,
+  section#four .blocks .block {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  section#four .dots {
+    width: 50%;
+  }
+
+  .content .blur {
+    height: 250px;
+  }
+
+  form {
+    padding: 0.5em;
+  }
+
+  form input {
+    min-height: 2.5em;
+  }
+
+  form .button {
+    padding: 0.75em 2em;
+  }
+
+  footer .widgets,
+  footer .copy {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer .copy {
+    margin-top: 0.5em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    padding: 0 2px;
+    font-size: 70%; /* Ajusta o tamanho da fonte para telas médias */
   }
 
   header, footer {
