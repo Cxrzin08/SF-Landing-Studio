@@ -216,18 +216,12 @@ section#one .title text {
 }
 
 
-
-
-
-
-
-
 .lead {
   font-size: 1.2rem;
   font-weight: bold;
   color: #fff;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .leadlink {
@@ -730,5 +724,28 @@ footer .copy span {
 
   footer .copy {
     margin-top: 0.5em;
+  }
+}
+
+.title {
+  width: 100%;
+  height: auto;
+}
+
+.title text {
+  font-size: 4rem; /* Tamanho do texto para computadores */
+}
+
+.title text tspan {
+  font-size: 4rem; /* Tamanho do tspan para computadores */
+}
+
+@media (max-width: 768px) { /* Ajuste para dispositivos móveis */
+  .title text {
+    font-size: 5rem; /* Tamanho do texto para dispositivos móveis */
+  }
+
+  .title text tspan {
+    font-size: 5rem; /* Tamanho do tspan para dispositivos móveis */
   }
 }
